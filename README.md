@@ -328,13 +328,21 @@ Se comprueba si realmente está en funcionamiento, mediante el comando:
 ```r
 jps
 ```
-Se podrá visualizar los siguientes servicios.
-
- 
+Se podrá visualizar los siguientes servicios:
+- NameNode
+- DataNode
+- SecondaryNameNode
+- Jps
+- ResourceManager
+- NodeManager
 
 NOTA: Si encuentra problemas al inicializar los procesos y no encuentra el datanode, esto se puede solucionar borrando la carpeta datanode, el cual fue asignado en la ruta que usted asignó en hdfs-site.xml.
 
 NOTA: Si al ejecutar start-dfs.sh no aparece el namenode, problema proviene desde el formateo de hdfs namenode –format, posiblemente otra solución es que usted debe borrar el namenode creado en la ruta de hdfs-site.xml
 
 La versión de Hadoop se verifica con:
+```r
 hadoop version
+```
+NOTA: Posteriormente se irán incorporando manuales de configuración sobre tecnologías de Big Data.
+
